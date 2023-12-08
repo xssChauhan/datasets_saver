@@ -14,10 +14,25 @@ Export Huggingface datasets in persistable formats uing CLI.
 `datasets download --help`
 ![cli help](images/cli.png)
 
-Example: `datasets download imdb` downloads the imdb dataset and persists it in `csv` format.
-The default output location is `~/saved_datasets/`.s
-
-
+Example: 
+`datasets download imdb` 
+This will download the [imdb](https://huggingface.co/datasets/imdb) dataset and persists it in `csv` format.
+The default output location is `~/saved_datasets/`.
 A dataset can be saved in `csv`, `json` and `parquet` files.
-
 All the splits/files of a dataset are downloaded and stored separately.
+The director `~/saved_datasets` is populated as follows:
+```shell
+$ tree ~/saved_datasets/
+.
+└── imdb
+    ├── test.csv
+    ├── train.csv
+    └── unsupervised.csv
+
+2 directories, 3 files
+```
+
+Similarly, the dataset can be downloaded in `json` and `parquet` files by using the `--format` option:
+
+JSON: `$ datasets download imdb --format json` <br>
+Parquet: `$ datasets download imdb --format parquet`

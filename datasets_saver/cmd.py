@@ -23,3 +23,8 @@ def download(
     typer.echo(f"Downloading {dataset_name}")
     dataset = load(dataset_name)
     transform(dataset, dataset_name, format)
+
+
+@app.callback()
+def callback():
+    pass
