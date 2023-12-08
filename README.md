@@ -1,6 +1,6 @@
 ![tests](https://github.com/xssChauhan/datasets_saver/actions/workflows/python-app.yml/badge.svg)
 # datasets_saver
-Export Huggingface datasets in persistable formats uing CLI.
+Export Huggingface datasets in persistable formats using CLI.
 
 ## Installation
 
